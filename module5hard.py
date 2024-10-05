@@ -7,7 +7,7 @@ import time
 class User:
     def __init__(self, nickname: str, password: int, age: int):
         self.nickname = nickname
-        self.password = password
+        self.password = hash(password)
         self.age = age
 
     def __str__(self):
